@@ -29,10 +29,8 @@
 ## 🖼️ إثبات النتيجة والتجربة التشخيصية (Live Inference Result)
 
 توضح الصورة أدناه النتيجة المباشرة لمعالجة إحدى صور الأشعة المقطعية عبر الواجهة التفاعلية للنظام، حيث أظهر النموذج قدرة فائقة على التعرف وتصنيف الحالة بدقة عالية ونسبة ثقة بلغت **93.42%**:
+![نتيجة تشخيص الكلى](ct_result.jpg)
 
-!![نتيجة تشخيص الكلى](https://raw.githubusercontent.com/abdulrahmanbatool577-create/Batool----j99/main/Screenshot_%D9%A2%D9%A0%D9%A2%D9%A2%D9%A0%D9%A2%D9%A1%D9%A1%D9%A7%D9%A0%D9%A4%D9%A0%D9%A7%D9%A9%D9%A7%D9%A5_Google.jpg)
-
----
 
 ## ⚙️ البنية البرمجية والبيئة التقنية (Tech Stack & Libraries)
 * **Core Language:** Python 3
