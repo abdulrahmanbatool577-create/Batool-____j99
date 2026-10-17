@@ -1,43 +1,60 @@
 
----
-title: Kidney CT Scan Classification
-sdk: gradio
-sdk_version: 4.0.0
-app_file: app.py
-pinned: false
----
 
-# 🩺 Kidney CT Scan Classification using Deep Learning (CNN)
-
-نظام ذكاء اصطناعي يعتمد على الشبكات العصبية الالتفافية (CNN) لتصنيف صور الأشعة المقطعية للكلى تلقائياً والتعرف على الحالات المرضية بدقة عالية.
+# 🩺 نظام تشخيص أمراض الكلى الذكي باستخدام الشبكات العصبية الالتفافية
+### Advanced Kidney CT Scan Multi-Class Classification Framework
 
 ---
 
-## 📌 1. Overview (نظرة عامة)
-يهدف هذا المشروع إلى التمييز وتصنيف أربع حالات رئيسية للكلى من خلال تحليل صور الأشعة المقطعية (CT Scan):
-* 🔴 **Tumor** (أورام الكلى)
-* 🟡 **Cyst** (أكياس الكلى)
-* 🔵 **Stone** (حصوات الكلى)
-* 🟢 **Normal** (سليمة)
+## 🌟 نبذة عن المشروع (Project Overview)
+نظام تشخيصي متكامل يعتمد على تقنيات **الرؤية الحاسوبية (Computer Vision)** و**التعلم العميق (Deep Learning)**، تم تطويره خصيصاً لتحليل ومعالجة صور الأشعة المقطعية (CT Scans) للكلى وتصنيفها فورياً بدقة عالية، مما يسهم في دعم اتخاذ القرار الطبي والتشخيص المبكر للآفات والأورام.
 
 ---
 
-## 🛠️ 2. Tech Stack (التقنيات المستخدمة)
-* **Framework & Model:** TensorFlow / Keras (CNN Model)
-* **User Interface:** Gradio Interactive Web UI
-* **Programming Language:** Python 3
-* **Libraries:** NumPy, Pillow, Matplotlib
+## 📊 كفاءة النموذج وأداء التشخيص (Model Benchmark & Metrics)
+* **دقة التدريب والتقييم (Model Accuracy):** **93%**
+* **نسبة الثقة في الاختبار الحقيقي (Live Prediction Confidence):** **93.42%** (تشخيص مؤكد لفئة الأورام).
+* **نموذج التصنيف (Model Architecture):** Deep Convolutional Neural Network (CNN).
+* **عدد الفئات المستهدفة:** 4 فئات تشخيصية دقيقة.
 
 ---
 
-## 📁 3. Project Structure (هيكلية المشروع)
-```text
-├── app.py              # ملف التشغيل الرئيسي وواجهة Gradio التفاعلية
-├── model.h5            # نموذج الذكاء الاصطناعي المدرَّب (CNN Model)
-├── requirements.txt    # قائمة المكتبات والاعتماديات البرمجية
-└── README.md           # التوثيق والشرح التفصيلي للمشروع
+## 🎯 الفئات التشخيصية المستهدفة (Diagnostic Taxonomy)
 
+1. **Tumor (أورام الكلى):** الكشف عن الكتل والنمو النسيجي غير الطبيعي في أنسجة الكلية.
+2. **Cyst (أكياس الكلى):** التمييز الدقيق بين الأكياس الممتلئة بالسوائل والتغيرات النسيجية.
+3. **Stone (حصوات الكلى):** رصد وتحديد مكان الترسبات الصلبة والبلورات المعدنية.
+4. **Normal (نسيج سليم):** التحقق المباشر من سلامة الكلية وخلوها من أي حيوية مرضية.
 
-## 🖼️ نتيجة التجربة التشخيصية (Live Test Result)
-![تشخيص الكلى](Screenshot_٢٠٢٦-٠٢-٢١-١٧-٠٤-٠٧-٩٧٥_Google.jpg)
-*(ملاحظة: تأكدي فقط أن اسم الصورة في الكود مطابق تماماً لاسم الصورة التي رفعتيها، أو يمكنكِ نسخ اسم ملف الصورة من القائمة ولصقه).*
+---
+
+## 🖼️ إثبات النتيجة والتجربة التشخيصية (Live Inference Result)
+
+توضح الصورة أدناه النتيجة المباشرة لمعالجة إحدى صور الأشعة المقطعية عبر الواجهة التفاعلية للنظام، حيث أظهر النموذج قدرة فائقة على التعرف وتصنيف الحالة بدقة عالية ونسبة ثقة بلغت **93.42%**:
+
+![نتيجة تشخيص الكلى](Screenshot_٢٠٢٦-٠٢-٢١-١٧-٠٤-٠٧-٩٧٥_Google.jpg)
+
+---
+
+## ⚙️ البنية البرمجية والبيئة التقنية (Tech Stack & Libraries)
+* **Core Language:** Python 3
+* **Deep Learning Framework:** TensorFlow / Keras (CNN Architecture)
+* **Image Processing & Analytics:** OpenCV, NumPy, Pillow (PIL)
+* **Interactive UI & Deployment:** Gradio Web Interface
+* **Development Environment:** Google Colab / Jupyter Notebook
+
+---
+
+## 📂 الهيكلية التنظيمية للمستودع (Repository Structure)
+* **`app.py`:** المحرك التنفيذي للواجهة البرمجية والتفاعلية المباشرة (Gradio UI).
+* **`training.py`:** البرمجية الخاصة بمعالجة البيانات، بناء المعمارية العصبية، والتدريب.
+* **`requirements.txt`:** حزمة الاعتماديات والمكتبات البرمجية المطلوبة للتشغيل.
+* **`Screenshot_...jpg`:** وثيقة إثبات الأداء والتجربة التشخيصية الحية للنموذج.
+* **`README.md`:** التوثيق التقني والتقرير الشامل لبنية النظام.
+
+---
+
+## 🚀 دليل التشغيل المحلي (Quick Execution Guide)
+
+1. **تثبيت حزمة المكتبات والاعتماديات البرمجية:**
+   ```bash
+   pip install -r requirements.txt
