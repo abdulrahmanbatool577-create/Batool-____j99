@@ -1,6 +1,5 @@
 
 ---
----
 title: Kidney CT Scan Classification
 sdk: gradio
 sdk_version: 4.0.0
@@ -8,12 +7,32 @@ app_file: app.py
 pinned: false
 ---
 
-# تصنيف أمراض الكلى باستخدام التعلم العميق 🩺
+# 🩺 Kidney CT Scan Classification using Deep Learning (CNN)
 
-مشروع تعلم عميق لتصنيف صور الأشعة المقطعية للكلى (Cyst, Normal, Stone, Tumor).
+نظام ذكاء اصطناعي يعتمد على الشبكات العصبية الالتفافية (CNN) لتصنيف صور الأشعة المقطعية للكلى تلقائياً والتعرف على الحالات المرضية بدقة عالية.
 
-## 📊 النتائج والتقنيات
-- **التقنيات المستخدمة:** TensorFlow/Keras, Gradio, Python
-- **الملفات:** 
-  - `app.py`: واجهة التطبيق التفاعلية
-  - `requirements.txt`: متطلبات التشغيل
+---
+
+## 📌 1. Overview (نظرة عامة)
+يهدف هذا المشروع إلى التمييز وتصنيف أربع حالات رئيسية للكلى من خلال تحليل صور الأشعة المقطعية (CT Scan):
+* 🔴 **Tumor** (أورام الكلى)
+* 🟡 **Cyst** (أكياس الكلى)
+* 🔵 **Stone** (حصوات الكلى)
+* 🟢 **Normal** (سليمة)
+
+---
+
+## 🛠️ 2. Tech Stack (التقنيات المستخدمة)
+* **Framework & Model:** TensorFlow / Keras (CNN Model)
+* **User Interface:** Gradio Interactive Web UI
+* **Programming Language:** Python 3
+* **Libraries:** NumPy, Pillow, Matplotlib
+
+---
+
+## 📁 3. Project Structure (هيكلية المشروع)
+```text
+├── app.py              # ملف التشغيل الرئيسي وواجهة Gradio التفاعلية
+├── model.h5            # نموذج الذكاء الاصطناعي المدرَّب (CNN Model)
+├── requirements.txt    # قائمة المكتبات والاعتماديات البرمجية
+└── README.md           # التوثيق والشرح التفصيلي للمشروع
