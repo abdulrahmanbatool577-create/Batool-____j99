@@ -11,7 +11,8 @@
 
 ## 💻 رابط ملف التدريب البرمجي (Training Script)
 يمكن الاطلاع على كود تدريب النموذج كاملاً ومستقلاً مباشرة من الرابط التالي:
-🔗 **[رابط ملف التدريب (training.py)](https://github.com/abdulrahmanbatool577-create/Batool---j99/blob/main/training.py)**
+🔗 🔗 **[رابط ملف التدريب (training.py)](training.py)**
+
 
 ---
 
